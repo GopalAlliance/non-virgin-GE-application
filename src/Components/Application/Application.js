@@ -237,8 +237,6 @@ const Application = ({ formData, setFormData }) => {
 
         axios.post(webhookString).then((res) => {
         }).catch(err => console.error('An error has occured', err));
-
-        alert("Application sent");
     }
 
     const sendFormData = async () => {
@@ -268,6 +266,7 @@ const Application = ({ formData, setFormData }) => {
             console.log(data);
             const response = await axios.post(`${process.env.REACT_APP_GROUP_ENROLL_ENDPOINT}`, data);
             console.log(response);
+            alert("Application sent");
             return response.data;
         } catch (error) {
             throw error;
@@ -440,8 +439,8 @@ const Application = ({ formData, setFormData }) => {
                 </div> : null}
 
             {formData.language === "fr" ?
-                <div className='group-enroll-application-form-header'>Chargez vos documents (facultatif) - max. 10 MB</div> :
-                <div className='group-enroll-application-form-header'>Upload Your Documents (Optional) - max. 10 MB</div>}
+                <div className='group-enroll-application-form-header'>Chargez vos documents (facultatif) - max. 10 MB / 6 fichiers</div> :
+                <div className='group-enroll-application-form-header'>Upload Your Documents (Optional) - max. 10 MB / 6 files</div>}
             <div className='group-enroll-required-documents'>
                 {formData.language === "fr" ?
                     <ol>
