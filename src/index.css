@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Baloo Bold";
+  src: local("Baloo2-Bold"),
+    url("./fonts/Baloo2-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Baloo ExtraBold";
+  src: local("Baloo2-ExtraBold"),
+    url("./fonts/Baloo2-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Baloo Medium";
+  src: local("Baloo2-Medium"),
+    url("./fonts/Baloo2-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Baloo Regular";
+  src: local("Baloo2-Regular"),
+    url("./fonts/Baloo2-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Baloo SemiBold";
+  src: local("Baloo2-SemiBold"),
+    url("./fonts/Baloo2-SemiBold.ttf") format("truetype");
+}

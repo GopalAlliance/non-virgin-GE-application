@@ -1,0 +1,64 @@
+.header-div {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    background: #1B447E;
+}
+
+.header-logo-div {
+    max-width: 1520px;
+    margin: auto;
+}
+
+.header-logo-div img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.language-toggle {
+    position: absolute;
+    color: white;
+    /* font-weight: 600; */
+    font-family: "Baloo Regular";
+    cursor: pointer;
+}
+
+.language-active {
+    color: white;
+    font-weight: 600;
+}
+
+.language-inactive {
+    color: #E7E7E7;
+}
+
+@media (min-width:1520px) {
+    .language-toggle {
+        right: 120px;
+        top: 20px;
+    }
+}
+
+@media (max-width:1519px) {
+    .language-toggle {
+        right: 3vw;
+        top: 20px;
+    }
+}
+
+/*smartphone view*/
+@media (max-width:480px) {
+    .header-div {
+        padding: 10px 0 10px 0;
+    }
+
+    .header-div img {
+        height: 20px;
+    }
+
+    .language-toggle {
+        right: 20px;
+        top: 10px;
+        font-size: 10px;
+    }
+}
